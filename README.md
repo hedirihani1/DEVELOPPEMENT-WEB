@@ -1,53 +1,45 @@
-Web4All - Plateforme de Recherche de Stages 🚀
-Web4All est une plateforme permettant aux étudiants de trouver des offres de stage, aux entreprises de publier des opportunités et aux pilotes de promotion de suivre les candidatures.
+SCREENHUB - Votre Double Écran Portable 🚀
+
+SCREENHUB est un site e-commerce avancé développé avec Shopify, proposant une solution innovante de double écran avec support pour PC portable. Améliorez votre productivité où que vous soyez !
+
+URL : https://screenshub.myshopify.com
 
 📌 Fonctionnalités
-✅ Recherche et gestion des offres de stage
-✅ Gestion des entreprises et des étudiants
-✅ Tableau de bord avec statistiques
-✅ Interface moderne et responsive
+
+✅ Vente de doubles écrans portables avec support intégré
+✅ Interface moderne, fluide et responsive
+✅ Paiements sécurisés et gestion simplifiée des commandes
+✅ Service client et support intégrés
+✅ SEO optimisé pour une meilleure visibilité
 
 🛠 Technologies utilisées
-Frontend : HTML, CSS, JavaScript
-Backend : PHP (POO, MVC), MySQL
-Architecture : MVC, moteur de template
-Sécurité : Validation des formulaires, conformité aux standards
 
-📂 Structure du projet
+Plateforme : Shopify
 
+Langages : Liquid, HTML, CSS, JavaScript
 
-/web4all
-│── /css        → Fichiers CSS  
-│── /js         → Scripts JavaScript  
-│── /pages      → Pages HTML  
-│── /backend    → PHP (gestion des données)  
-│── /images     → Ressources visuelles  
-│── index.php   → Page principale  
-🚀 Installation
-Cloner le projet
+Gestion du contenu : Shopify CMS
 
+Paiements : Intégration Shopify Payments, PayPal, Stripe
 
-git clone https: https://github.com/hedirihani1/DEVELOPPEMENT-WEB
-cd web4all
-Configurer la base de données
+SEO & Analytics : Google Analytics, Meta Pixel, outils Shopify SEO
 
-Importer web4all.sql dans MySQL
+🚀 Installation & Déploiement
 
-Modifier config.php avec tes accès DB
+SCREENHUB étant basé sur Shopify, l'installation et la gestion sont simplifiées :
 
-Lancer le serveur
+Accédez à votre compte Shopify.
 
-php -S localhost:8000
-Accéder à 127.0.0.1
+Installez le thème personnalisé de SCREENHUB.
+
+Configurez les produits et les options de paiement.
+
+Déployez et commencez à vendre !
 
 📬 Contributions
-Fork, pull request ou suggestions bienvenues ! 🚀
 
-© 2025 - Tous droits réservés - Web4All
+Les améliorations et suggestions sont les bienvenues ! Contactez-nous via le site officiel. 🚀
 
-
-
-
-
+© 2025 - Tous droits réservés - SCREENHUB
 
 
