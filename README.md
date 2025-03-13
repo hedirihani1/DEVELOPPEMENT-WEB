@@ -27,7 +27,7 @@ Sécurité : Validation des formulaires, conformité aux standards
 Cloner le projet
 
 
-git clone https://github.com/TON-UTILISATEUR/web4all.git
+git clone https: https://github.com/hedirihani1/DEVELOPPEMENT-WEB
 cd web4all
 Configurer la base de données
 
