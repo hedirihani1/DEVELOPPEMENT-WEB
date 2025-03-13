@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Étudiants - Web4All</title>
+    <link rel="stylesheet" href="Etudiant.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="C:\Users\hedir\Desktop\CESI\CPI A2 Info\Projet D_étude\WEB4ALL\WEB4ALL\images\WEB4ALL__4_-removebg-preview.png" alt="Web4All Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Accueil.html">Accueil</a>&nbsp;||&nbsp;</li>
+                <li><a href="Offres.html">Offres</a>&nbsp;||&nbsp;</li>
+                <li><a href="Wishlist.html">Ma Liste</a>&nbsp;||&nbsp;</li>
+                <li><a href="Contact.html">Contact</a>&nbsp;||&nbsp;</li>
+                <li><a href="Entreprise.html">Entreprises</a>&nbsp;||&nbsp;</li>
+                <li><a href="OffresGestion.html">Gérer les Offres</a>&nbsp;||&nbsp;</li>
+                <li><a href="Dashboard.html">Statistiques</a>&nbsp;||&nbsp;</li>
+                <li><a href="Pilote.html">Pilotes</a>&nbsp;||&nbsp;</li>
+                <li><a href="Etudiant.html">Étudiants</a></li>
+                <li class="btn"><a href="Connexion.html">Connexion</a></li>
+                <li class="btn"><a href="Inscription.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gestion des Étudiants</h1>
+
+        <section class="etudiant-actions">
+            <button class="btn-primary" onclick="openModal('addEtudiantModal')">Ajouter un Étudiant</button>
+        </section>
+
+        <section class="etudiant-list">
+            <h2>Liste des Étudiants</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dupont</td>
+                        <td>Jean</td>
+                        <td>jean.dupont@example.com</td>
+                        <td>
+                            <button class="btn-edit" onclick="editEtudiant()">Modifier</button>
+                            <button class="btn-delete" onclick="deleteEtudiant()">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Martin</td>
+                        <td>Clara</td>
+                        <td>clara.martin@example.com</td>
+                        <td>
+                            <button class="btn-edit" onclick="editEtudiant()">Modifier</button>
+                            <button class="btn-delete" onclick="deleteEtudiant()">Supprimer</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Tous droits réservés - Web4All</p>
+    </footer>
+
+  
+    <div id="addEtudiantModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('addEtudiantModal')">&times;</span>
+            <h2>Ajouter un Étudiant</h2>
+            <form>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" required>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" required>
+                <button type="submit" class="btn-primary">Ajouter</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+
+        function editEtudiant() {
+            alert("Modification en cours...");
+        }
+
+        function deleteEtudiant() {
+            if (confirm("Voulez-vous vraiment supprimer cet étudiant ?")) {
+                alert("Étudiant supprimé !");
+            }
+        }
+    </script>
+
+</body>
+</html>

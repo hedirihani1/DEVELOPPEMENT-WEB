@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Web4All</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="C:\Users\hedir\Desktop\CESI\CPI A2 Info\Projet D_étude\WEB4ALL\WEB4ALL\images\WEB4ALL__4_-removebg-preview.png" alt="Web4All Logo">
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="Accueil.html">Accueil</a>&nbsp;||&nbsp;</li>
+            <li><a href="Offres.html">Offres</a>&nbsp;||&nbsp;</li>
+            <li><a href="Wishlist.html">Ma Liste</a>&nbsp;||&nbsp;</li>
+            <li><a href="Contact.html">Contact</a>&nbsp;||&nbsp;</li>
+            <li><a href="Entreprise.html">Entreprises</a>&nbsp;||&nbsp;</li>
+            <li><a href="OffresGestion.html">Gérer les Offres</a>&nbsp;||&nbsp;</li>
+            <li><a href="Dashboard.html">Statistiques</a>&nbsp;||&nbsp;</li>
+            <li><a href="Pilote.html">Pilotes</a>&nbsp;||&nbsp;</li>
+            <li><a href="Etudiant.html">Étudiants</a></li>
+            <li class="btn"><a href="Connexion.html">Connexion</a></li>
+            <li class="btn"><a href="Inscription.html">Inscription</a></li>
+        </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+           <form action="Postuler.php" method="post" enctype="multipart/form-data">
+            <h1>Votre opportunité vous attend!</h1><br>
+             <p>Vous pouvez ici répondre directement à l'offre de stage déposée par l'entreprise. Soyez le plus précis possible dans vos réponses!</p>
+             <br>
+             <article>
+               <h2>Stage - Administrateur système et réseau H/F</h2><br>
+               <p>IBM | Porrichet-44 | Publiée le 23/01/2025 | Réf: 123XYZ-44</p><br>
+               <h3>Résumé de l'offre</h3><br>
+               <div class="container-info">
+                 <p class="box-info">3 Mois</p>
+                 <p class="box-info">Bac+2 Bac+3</p>
+                 <p class="box-info">Système, réseau, cloud</p>
+                 <p class="box-info">Exp - 1 an</p>
+             </div>
+             </article>
+             
+             <br />
+             
+             <article>
+               <h2>Envoyer votre candidature dès maintenant!</h2><br><br>
+               <label for="civilite">Civilité</label><br><br>
+               <select id="civilite" name="civilite">
+                 <option value="Madame">Madame</option>
+                 <option value="Monsieur">Monsieur</option>
+               </select>
+               <br><br>
+               <label for="Name">Nom</label><br><br>
+               <input type="text" id="Name" name="Name" placeholder="Ex: SMITH" required>
+               <br><br>
+               <label for="LastN">Prénom</label><br><br>
+               <input type="text" id="LastN" name="LastN" placeholder="Ex:Eden" required>
+               <br><br>
+               <label for="mail">Courriel</label><br><br>
+               <input type="email" id="mail" name="mail" placeholder="leboncoin@exemple.com" required>
+               <br><br>
+               <label><strong>À propos de vous :</strong></label>
+               <br><br>
+               <input type="checkbox" id="permis" name="apropos" value="permis">
+               <label for="permis">Permis B</label><br>
+               <input type="checkbox" id="vehicule" name="apropos" value="vehicule">
+               <label for="vehicule">Véhiculé</label><br>
+               <input type="checkbox" id="certifications" name="apropos" value="certifications">
+               <label for="certifications">Certifications (Microsoft, Cisco...)</label>
+               <br><br>
+               <label><strong>Je suis majeur :</strong></label>
+               <br><br>
+               <input type="radio" id="majeur_oui" name="majeur" value="oui" required>
+               <label for="majeur_oui">Oui</label>
+               <input type="radio" id="majeur_non" name="majeur" value="non">
+               <label for="majeur_non">Non</label>
+               <br><br>
+               <label for="message"><strong>Votre message au recruteur :</strong></label><br>
+               <textarea id="message" name="message" rows="4" cols="50" placeholder="Votre message..." required></textarea>
+               <br><br>
+               <label>CV</label>
+               <br><br>
+               <label for="cv" class="custom-file-label"><strong id="file-label">CHOISIR MON CV</strong></label><br><br>
+               <input type="file" id="cv" name="cv" class="custom-file-input" required style="display: none;" accept=".pdf">
+               <p>Poids max: 2Mo<br>Format Compatible: PDF</p>
+               
+               <script>
+               document.getElementById('cv').addEventListener('change', function(event) {
+                   const fileLabel = document.getElementById('file-label');
+                   if (this.files.length > 0) {
+                       fileLabel.textContent = this.files[0].name; // Affiche le nom du fichier
+                   } else {
+                       fileLabel.textContent = "CHOISIR MON CV"; // Texte par défaut
+                   }
+               });
+               </script>
+               
+               <br>
+               <button type="submit" class="postuler">Postuler</button>
+               <button type="reset" class="postuler">Réinitialiser</button>
+               <br><br>
+               <p>En cliquant sur "Postuler", vous acceptez les <a href="Cookies.html">CGU</a> et déclarez avoir pris connaissance de la <a href="Mentions-legales.html">politique de protection des données</a> de notre site.</p>
+             </article>
+           </form>
+        </section>
+      </main>
+
+    <footer>
+        <p>2025 - Tous droits réservés - Web4All</p>
+    </footer>
+
+    <script src="Contact.js"></script>
+</body>
+</html>

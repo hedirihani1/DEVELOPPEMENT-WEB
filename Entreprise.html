@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Entreprises - Web4All</title>
+    <link rel="stylesheet" href="Entreprise.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="C:\Users\hedir\Desktop\CESI\CPI A2 Info\Projet D_étude\WEB4ALL\WEB4ALL\images\WEB4ALL__4_-removebg-preview.png" alt="Web4All Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Accueil.html">Accueil</a>&nbsp;||&nbsp;</li>
+                <li><a href="Offres.html">Offres</a>&nbsp;||&nbsp;</li>
+                <li><a href="Wishlist.html">Ma Liste</a>&nbsp;||&nbsp;</li>
+                <li><a href="Contact.html">Contact</a>&nbsp;||&nbsp;</li>
+                <li><a href="Entreprise.html">Entreprises</a>&nbsp;||&nbsp;</li>
+                <li><a href="OffresGestion.html">Gérer les Offres</a>&nbsp;||&nbsp;</li>
+                <li><a href="Dashboard.html">Statistiques</a>&nbsp;||&nbsp;</li>
+                <li><a href="Pilote.html">Pilotes</a>&nbsp;||&nbsp;</li>
+                <li><a href="Etudiant.html">Étudiants</a></li>
+                <li class="btn"><a href="Connexion.html">Connexion</a></li>
+                <li class="btn"><a href="Inscription.html">Inscription</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gestion des Entreprises</h1>
+
+        
+        <section class="search-section">
+            <h2>Rechercher une entreprise</h2>
+            <input type="text" placeholder="Nom de l'entreprise..." id="search-input">
+            <button class="btn-main">Rechercher</button>
+        </section>
+
+       
+        <section class="entreprises-list">
+            <h2>Entreprises enregistrées</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CodeLab Solutions</td>
+                        <td>Spécialisé en cybersécurité</td>
+                        <td>contact@codelab.com</td>
+                        <td>
+                            <button class="edit-btn">Modifier</button>
+                            <button class="delete-btn">Supprimer</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        
+        <section class="form-section">
+            <h2>Ajouter / Modifier une entreprise</h2>
+            <form>
+                <input type="text" placeholder="Nom de l'entreprise" required>
+                <input type="text" placeholder="Description" required>
+                <input type="email" placeholder="Email de contact" required>
+                <input type="tel" placeholder="Téléphone de contact" required>
+                <button class="btn-main">Enregistrer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Tous droits réservés - Web4All</p>
+    </footer>
+
+</body>
+</html>

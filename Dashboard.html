@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Web4All</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="C:\Users\hedir\Desktop\CESI\CPI A2 Info\Projet D_étude\WEB4ALL\WEB4ALL\images\WEB4ALL__4_-removebg-preview.png" alt="Web4All Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Accueil.html">Accueil</a>&nbsp;||&nbsp;</li>
+                <li><a href="Offres.html">Offres</a>&nbsp;||&nbsp;</li>
+                <li><a href="Wishlist.html">Ma Liste</a>&nbsp;||&nbsp;</li>
+                <li><a href="Contact.html">Contact</a>&nbsp;||&nbsp;</li>
+                <li><a href="Entreprise.html">Entreprises</a>&nbsp;||&nbsp;</li>
+                <li><a href="OffresGestion.html">Gérer les Offres</a>&nbsp;||&nbsp;</li>
+                <li><a href="Dashboard.html">Statistiques</a>&nbsp;||&nbsp;</li>
+                <li><a href="Pilote.html">Pilotes</a>&nbsp;||&nbsp;</li>
+                <li><a href="Etudiant.html">Étudiants</a></li>
+                <li class="btn"><a href="Connexion.html">Connexion</a></li>
+                <li class="btn"><a href="Inscription.html">Inscription</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tableau de Bord</h1>
+
+        <section class="stats-section">
+            <div class="stat-box">
+                <h2>Nombre total d'offres</h2>
+                <p>128</p>
+            </div>
+            <div class="stat-box">
+                <h2>Étudiants en recherche</h2>
+                <p>243</p>
+            </div>
+            <div class="stat-box">
+                <h2>Offres en wishlist</h2>
+                <p>87</p>
+            </div>
+        </section>
+
+        <section class="charts-section">
+            <div class="chart-container">
+                <h2>Répartition des offres par compétence</h2>
+                <canvas id="competenceChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h2>Durée moyenne des stages</h2>
+                <canvas id="dureeChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Tous droits réservés - Web4All</p>
+    </footer>
+
+    <script>
+        
+        const ctx1 = document.getElementById('competenceChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'pie',
+            data: {
+                labels: ['Développement Web', 'Data Science', 'CyberSécurité', 'Cloud Computing'],
+                datasets: [{
+                    data: [40, 25, 20, 15],
+                    backgroundColor: ['#ff6600', '#007bff', '#28a745', '#dc3545']
+                }]
+            }
+        });
+
+        
+        const ctx2 = document.getElementById('dureeChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['3 mois', '6 mois', '1 an'],
+                datasets: [{
+                    label: 'Nombre de stages',
+                    data: [50, 30, 48],
+                    backgroundColor: ['#ff6600', '#007bff', '#28a745']
+                }]
+            }
+        });
+    </script>
+
+</body>
+</html>
