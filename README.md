@@ -12,10 +12,10 @@ Frontend : HTML, CSS, JavaScript
 Backend : PHP (POO, MVC), MySQL
 Architecture : MVC, moteur de template
 Sécurité : Validation des formulaires, conformité aux standards
+
 📂 Structure du projet
-bash
-Copier
-Modifier
+
+
 /web4all
 │── /css        → Fichiers CSS  
 │── /js         → Scripts JavaScript  
@@ -26,20 +26,17 @@ Modifier
 🚀 Installation
 Cloner le projet
 
-bash
-Copier
-Modifier
+
 git clone https://github.com/TON-UTILISATEUR/web4all.git
 cd web4all
 Configurer la base de données
 
 Importer web4all.sql dans MySQL
+
 Modifier config.php avec tes accès DB
+
 Lancer le serveur
 
-bash
-Copier
-Modifier
 php -S localhost:8000
 Accéder à 127.0.0.1
 
